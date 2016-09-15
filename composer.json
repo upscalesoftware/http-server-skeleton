@@ -1,0 +1,25 @@
+{
+    "name": "upscale/http-server-skeleton",
+    "description": "Skeleton of RESTful API with request parsing, routing, and dependency injection",
+    "type": "project",
+    "version": "1.0.0",
+    "keywords": [
+        "HTTP server",
+        "REST server",
+        "REST API",
+        "RESTful API",
+        "RESTful web service",
+        "skeleton",
+        "lightweight"
+    ],
+    "license": "Apache-2.0",
+    "require": {
+        "php": "~7.0",
+        "upscale/http-server-engine": "~1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Upscale\\HttpServerSkeleton\\": "src/"
+        }
+    }
+}
