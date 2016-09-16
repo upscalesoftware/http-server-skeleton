@@ -1,5 +1,6 @@
 <?php
-namespace Upscale\HttpServerSkeleton;
+
+use Upscale\HttpServerSkeleton\Controller;
 
 return [
     ['GET', '/', Controller\InfoAction::class],
