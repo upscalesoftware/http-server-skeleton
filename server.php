@@ -4,7 +4,7 @@ use Aura\Di\ContainerBuilder;
 use Upscale\HttpServerEngine\DiConfig;
 use Zend\Diactoros\Server;
 
-require __DIR__ . '/autoload.php';
+require __DIR__ . '/vendor/autoload.php';
 
 $diBuilder = new ContainerBuilder();
 $di = $diBuilder->newConfiguredInstance([
