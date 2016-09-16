@@ -10,7 +10,7 @@ It defines the directory structure, router configuration, and the entry point th
 Install via [Composer](https://getcomposer.org/) to a directory of your choice (say, `/tmp/rest-api-project`):
 
 ```shell
-composer create-project upscale/http-server-skeleton /tmp/rest-api-project
+composer create-project --no-dev upscale/http-server-skeleton /tmp/rest-api-project
 ```
 
 Launch the server via the PHP's built-in web server:
@@ -24,7 +24,7 @@ Open [http://127.0.0.1:8080](http://127.0.0.1:8080) in a browser to confirm the 
 
 ## Performance
 
-The project is powered by the lightweight [HTTP server engine](https://github.com/upscalesoftware/http-server-engine) focused on speed and minimalism.
+The project is powered by the lightweight [HTTP server engine](https://github.com/upscalesoftware/http-server-engine) committed to speed and minimalism.
 
 
 ## License
