@@ -3,9 +3,9 @@ namespace Upscale\HttpServerSkeleton\Controller;
 
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
-use Upscale\HttpServerEngine\ActionInterface;
+use Upscale\HttpServerEngine\HandlerInterface;
 
-class InfoAction implements ActionInterface
+class InfoAction implements HandlerInterface
 {
     /**
      * @var ServerRequestInterface
