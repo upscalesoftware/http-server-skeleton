@@ -4,7 +4,6 @@ namespace Upscale\HttpServerSkeleton\Controller;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use Upscale\HttpServerEngine\ActionInterface;
-use Zend\Diactoros\ServerRequestFactory;
 
 class InfoAction implements ActionInterface
 {
@@ -28,7 +27,7 @@ class InfoAction implements ActionInterface
      */
     public function execute(ResponseInterface $response)
     {
-        $software = ServerRequestFactory::get('SERVER_SOFTWARE', $this->request->getServerParams(), 'PHP');
+        $software = $this->request->getServerParams()['SERVER_SOFTWARE'];
         $response->getBody()->write("Server powered by $software is running!");
         return $response;
     }
