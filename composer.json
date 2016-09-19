@@ -4,11 +4,10 @@
     "type": "project",
     "version": "1.1.0",
     "keywords": [
-        "HTTP server",
-        "REST server",
-        "REST API",
-        "RESTful API",
-        "RESTful web service",
+        "HTTP",
+        "REST",
+        "RESTful",
+        "API",
         "skeleton",
         "lightweight"
     ],
