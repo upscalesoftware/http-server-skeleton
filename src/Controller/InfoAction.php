@@ -29,6 +29,6 @@ class InfoAction implements HandlerInterface
     {
         $software = $this->request->getServerParams()['SERVER_SOFTWARE'];
         $response->getBody()->write("Server powered by $software is running!");
-        return $response;
+        return $response->withHeader('Content-Type', 'text/plain');
     }
 }
